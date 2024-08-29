@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        ip=prompt("enter your string:");res="";
+for(i in ip){
+    
+   bb=ip.charCodeAt(i)
+   if(bb==65){
+       res=res+"Z";
+   }
+   if(bb==90){
+       res=res+"A";
+       
+   }
+   if(bb>65&&bb<90){
+       var cc=String.fromCharCode(bb-1);
+       res=res+cc;
+   }
+   if(bb==97){
+       res=res+"z"
+   }
+   if(bb==122){
+       res=res+"a"
+   }
+   if(bb>97 && bb<122){
+   
+     var aa=String.fromCharCode(bb-1);
+   
+    res=res+aa;
+   }
+
+}
+console.log(res);
+    </script>
+</body>
+</html>
